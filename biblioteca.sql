@@ -103,8 +103,15 @@ CREATE TABLE `users` (
 -- Extraindo dados da tabela `users`
 --
 
+
 INSERT INTO `users` (`id_user`, `nome`, `email`, `palavra_passe`) VALUES
 (1, 'Vanbert Capita', 'vambert@gmail.com', '$2y$10$rGBzXp8W.L2CSzcIJ5zi2.iQXnDDyjeNiss5PZdTHejedSmPgyk5O');
+
+
+UPDATE users SET email = 'admin@email.com' WHERE id_user = 1;
+UPDATE users SET nome = 'Anilson Pedro' WHERE id_user = 1;
+
+SELECT * FROM users
 
 --
 -- Índices para tabelas despejadas
